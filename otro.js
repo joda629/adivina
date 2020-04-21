@@ -38,14 +38,14 @@ submit.addEventListener("click", function(e)
                 if(int == 1)
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedó " + int + " vida");
-                    location.href="joda629.github.io/adivina"
+                    location.href="https://joda629.github.io/adivina"
                     window.location.reload()
                    num.value=""
                 }
                 else 
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedaron " + int + " vidas");
-                    location.href="joda629.github.io/adivina"
+                    location.href="https://joda629.github.io/adivina"
                     window.location.reload()
                    num.value=""
                 }
@@ -54,7 +54,7 @@ submit.addEventListener("click", function(e)
         else 
         {
             alert("Lo sentimos no tienes mas vidas")
-            location.href="joda629.github.io/adivina"
+            location.href="https://joda629.github.io/adivina"
             window.location.reload()
             num.value=""
         }
