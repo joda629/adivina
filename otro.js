@@ -39,13 +39,13 @@ submit.addEventListener("click", function(e)
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedó " + int + " vida");
                     window.location.reload()
-                    num.value=""
+                    form.reset();
                 }
                 else 
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedaron " + int + " vidas");
                     window.location.reload()
-                    num.value=""
+                    form.reset();
                 }
             }
         }
@@ -53,7 +53,7 @@ submit.addEventListener("click", function(e)
         {
             alert("Lo sentimos no tienes mas vidas")
             window.location.reload()
-            num.value=""
+            form.reset();
         }
 
 
