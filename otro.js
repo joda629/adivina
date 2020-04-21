@@ -10,7 +10,6 @@ let form=document.getElementById("form")
 
 submit.addEventListener("click", function(e)
 {
-    e.preventDefault()
     if(num.value == "")
     {
         alert("Debes ingresar un número");
@@ -40,12 +39,14 @@ submit.addEventListener("click", function(e)
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedó " + int + " vida");
                     window.location.reload()
+                    form.reset()
                    num.value=""
                 }
                 else 
                 {
                     alert("Felicidades adivinaste el número " + random + " y te quedaron " + int + " vidas");
                     window.location.reload()
+                    form.reset()
                    num.value=""
                 }
             }
@@ -54,6 +55,7 @@ submit.addEventListener("click", function(e)
         {
             alert("Lo sentimos no tienes mas vidas")
             window.location.reload()
+                    form.reset()
             num.value=""
         }
 
